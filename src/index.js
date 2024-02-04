@@ -15,7 +15,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.use('/api/auth',router)
 app.use('/api/notes',notesroutes)
 db().then(
-app.listen(PORT,()=>{
+app.listen(8000,()=>{
     console.log("server started")
 })).catch((err)=>{
     console.log(err)
