@@ -1,7 +1,9 @@
 const mongoose=require("mongoose")
 const mongodb=require("mongodb")
+const dotenv=require("dotenv")
+dotenv.config()
 
-const URI="mongodb+srv://shiva:qwertyuiop@atlascluster.gw1or1c.mongodb.net/i-notebookapp?retryWrites=true&w=majority"
+const URI=process.env.URI
 
 const db=async()=>{
     try{
